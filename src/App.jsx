@@ -6,6 +6,7 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Productedetails from "./Components/productdetails";
 import NewProduct from "./Components/NewProduct";
+import UpdateProduct from "./Components/UpdateProduct";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 
 
@@ -29,6 +30,7 @@ const App = () => {
           <li>
           <Link to="/NewProduct">New Product</Link>
         </li>
+        
       </ol>
 
  
@@ -40,6 +42,7 @@ const App = () => {
           <Route path="/product" element={<Productedetails />} />
           <Route path="/todo" element={<TodoList />} />
           <Route path="/NewProduct" element={<NewProduct />} />
+          <Route path="/update/:id" element={<UpdateProduct />} />
         </Routes>
       </BrowserRouter>
 
